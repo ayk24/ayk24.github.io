@@ -76,6 +76,10 @@ body > section {
     padding-left: 83px;
 }
 
+.height-adjustment-indent {
+    margin-bottom: 35px;
+}
+
 .fa-md {
     font-size: 36px;
     height: 68px;
