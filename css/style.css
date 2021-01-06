@@ -72,12 +72,8 @@ body > section {
     padding-left: 22px;
 }
 
-.content-indent {
-    padding-left: 83px;
-}
-
-.height-adjustment-indent {
-    margin-bottom: 35px;
+.content-flex {
+    display: flex;
 }
 
 .fa-md {
