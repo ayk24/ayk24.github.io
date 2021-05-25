@@ -110,16 +110,16 @@ body > section {
     max-width: 600px;
 }
 
+.gap {
+    margin-bottom: 50px;
+}
+
 .tiny-gap {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .small-gap {
     margin-bottom: 25px;
-}
-
-.gap {
-    margin-bottom: 50px;
 }
 
 .big-gap {
