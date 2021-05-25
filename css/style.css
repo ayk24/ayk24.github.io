@@ -114,6 +114,10 @@ body > section {
     margin-bottom: 50px;
 }
 
+.top-gap-zero {
+    margin-top: 0px;
+}
+
 .tiny-gap {
     margin-bottom: 10px;
 }
