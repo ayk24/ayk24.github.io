@@ -1,3 +1,3 @@
 # Portfolio
-Check out the link below.  
----> https://ayk24.github.io/
+Check it out !  
+-> https://ayk24.github.io/
