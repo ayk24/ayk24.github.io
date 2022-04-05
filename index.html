@@ -1,353 +1,212 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayaka Ueyama</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>🎧</text></svg>">
-    <script src="js/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaka Ueyama</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css"
+    integrity="sha512-wyfUxKCJqlTFPc9qJy328AyR3g0cY8m/zQ6SQJdDA1QMV+ZWRHKRtmhv946ijpeZUEyFpzo4dILZXtkoaT+0sg=="
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 style=%22dominant-baseline:central;text-anchor:middle;font-size:90px;%22>🎧</text></svg>">
 </head>
 
 <body>
-    <div id="preloader"></div>
-    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
-        <div class="container">
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#activity">Activity</a></li>
-                    <li><a class="page-scroll" href="#experience">Experience</a></li>
-                    <li><a class="page-scroll" href="#publication">Publication</a></li>
-                    <li><a class="page-scroll" href="#skill">Skill</a></li>
-                    <li><a class="page-scroll" href="#education">Education</a></li>
-                </ul>
-            </div>
+  <a href="#" class="nav-toggle js-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+    aria-controls="navbar"><i></i></a>
+  <aside id="aside">
+    <div class="author-img" style="background-image: url(images/dog.png)"></div>
+    <nav id="menu" class="navbar">
+      <div id="navbar" class="collapse">
+        <ul>
+          <li><a href="#" data-nav-section="about">About</a></li>
+          <li><a href="#" data-nav-section="experience">Experience</a></li>
+          <li><a href="#" data-nav-section="publication">Publication</a></li>
+          <li><a href="#" data-nav-section="award">Award</a></li>
+        </ul>
+      </div>
+      <div class="external-link">
+        <ul>
+          <li><a class="far fa-envelope" href="mailto:aueyama@kanolab.net" target="_blank"></a></li>
+          <li><a class="fab fa-github" href="https://github.com/ayk24" target="_blank"></a></li>
+          <li><a class="fab fa-linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+
+  <div class="main">
+    <section class="about container" data-section="about">
+      <div class="animate-box" data-animate-effect="fadeIn">
+        <div class="title">Ayaka Ueyama</div>
+        <p>
+          M2，Kano Lab<br>
+          Department of Informatics<br>
+          Graduate School of Integrated Science and Technology<br>
+          Shizuoka University
+        </p>
+      </div>
+    </section>
+
+    <section class="experience container" data-section="experience">
+      <div class="main-title animate-box" data-animate-effect="fadeIn">Work Experience</div>
+      <div class="timeline">
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-1"></div>
+          <div class="content">
+            <div class="title">LINE Corporation<span>　November 8, 2021 - March 31, 2022</span></div>
+            <p>AI Company, Machine Learning & Server-side Engineer ( Part-time job )<br>
+              Python / Docker / Kubernetes</p>
+          </div>
         </div>
-    </header>
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-2"></div>
+          <div class="content">
+            <div class="title">Recruit Co., Ltd.<span>　October 4 - November 5, 2021</span></div>
+            <p>Data Scientist & Machine Learning Engineer ( Part-time job )<br>
+              Python / BigQuery</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-3"></div>
+          <div class="content">
+            <div class="title">LINE Corporation<span>　August 16 - September 24, 2021</span></div>
+            <p>AI Company, Machine Learning & Server-side Engineer ( Internship )<br>
+              Python / Docker / Kubernetes<br>[<a
+                href="https://engineering.linecorp.com/ja/blog/internship2021-ai-hyperclova/" class="link"
+                target="_blank" rel="noopener noreferrer">blog</a>]</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-4"></div>
+          <div class="content">
+            <div class="title">Akatsuki Inc.<span>　July 5 - 27, 2021</span></div>
+            <p>Server-side Engineer ( Internship )<br>
+              Ruby on Rails, AWS</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-5"></div>
+          <div class="content">
+            <div class="title">Speee Inc.<span>　May 29, 2021</span></div>
+            <p>Winner of a 1-day Internship.</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-box" data-animate-effect="fadeInLeft">
+          <div class="icon color-6"></div>
+        </div>
+      </div>
+    </section>
 
-    <div id="content-wrapper">
-        <section id="about" class="white">
-            <div class="container">
-                <div class="gap"></div>
-                <div class="row col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">ABOUT ME</h2>
-                    <hr>
-                </div>
-                <div class="col-md-6 center fade-up">
-                    <img src="images/dog.png" alt="">
-                </div>
-                <div class="col-md-6 fade-up">
-                    <h3>Ayaka Ueyama</h3>
-                    <div class="small-gap"></div>
-                    <p>M2，Kano Lab</a><br>
-                        Department of Informatics<br>
-                        Graduate School of Integrated Science and Technology<br>
-                        Shizuoka University</p>
-                    <p><i class="fa fa-envelope-o"></i>　aueyama _at_ kanolab.net</p>
-                    <div class="small-gap"></div>
-                    <div class="icon">
-                        <a class="btn btn-social btn-twitter" href="https://twitter.com/ayk24_" target="_blank"
-                            rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social btn-github" href="https://github.com/ayk24" target="_blank"
-                            rel="noopener noreferrer"><i class="fa fa-github"></i></a>
-                        <a class="btn btn-social btn-atcoder" href="https://atcoder.jp/users/ayk24" target="_blank"
-                            rel="noopener noreferrer"><i class="fa fa-code"></i></a>
-                    </div>
-                </div>
-        </section>
-    </div>
+    <section class="publication container" data-section="publication">
+      <div class="main-title animate-box" data-animate-effect="fadeIn">Publication</div>
+      <div class="sub-title animate-box" data-animate-effect="fadeIn">Journal</div>
+      <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+        <div class="icon"></div>
+        <div class="content">
+          <p>
+            <u>Ayaka Ueyama</u>, Yoshinobu Kano.<br>
+            <strong>Diverse Dialogue Generation by Deep Learning Methods Using Loss Function Incorporating Word
+              Statistics.</strong><br>
+            Transactions of the Japanese Society for Artificial Intelligence, Vol. 37, No. 2, 2022.<br>
+            [<a href="https://www.jstage.jst.go.jp/article/tjsai/37/2/37_37-2_G-L62/_article/-char/ja/" class="link"
+              target="_blank" rel="noopener noreferrer">paper</a>]
+          </p>
+        </div>
+      </div>
+      <div class="sub-title animate-box" data-animate-effect="fadeIn">International Conferences (referred)</div>
+      <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+        <div class="icon"></div>
+        <div class="content">
+          <p>
+            <u>Ayaka Ueyama</u>, Yoshinobu Kano.<br>
+            <strong>Diverse dialogue generation with context dependent dynamic loss function.</strong><br>
+            In Proceedings of the 28th International Conference on Computational Linguistics (COLING2020, Main),
+            pp.4123–4127, Barcelona Spain (Online), 2020. (Acceptance rate:26.2%)<br>
+            [<a href="https://www.aclweb.org/anthology/2020.coling-main.364" class="link" target="_blank"
+              rel="noopener noreferrer">paper</a>]
+          </p>
+        </div>
+      </div>
+      <div class="sub-title animate-box" data-animate-effect="fadeIn">Domestic Conference / Others</div>
+      <div class="publication-item animate-box" data-animate-effect="fadeInLeft">
+        <div class="icon"></div>
+        <div class="content">
+          <u>上山 彩夏</u>, 狩野 芳伸.<br>
+          <strong>生成文の文脈に応じ動的に変化する損失関数による多様な対話応答生成.</strong><br>
+          言語処理学会第26回年次大会 (NLP2020), 水戸 (Online), 2020.<br>
+          [<a href="https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P5-11.pdf" class="link" target="_blank"
+            rel="noopener noreferrer">paper</a>]
+        </div>
+      </div>
+    </section>
 
-    <div id="content-wrapper">
-        <section id="activity" class="white">
-            <div class="container">
-                <div class="row col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">Activity</h2>
-                    <hr>
-                </div>
+    <section class="award container" data-section="award">
+      <div class="main-title animate-box" data-animate-effect="fadeIn">Award</div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="award-item animate-box" data-animate-effect="fadeInBottom">
+            <div class="title">首席卒業</div>
+            <small>March 19, 2021</small>
+            <p>静岡大学を情報学部首席で<br>卒業しました．<br>[<a href="https://www.shizuoka.ac.jp/news/detail.html?CN=7104" class="link"
+                target="_blank" rel="noopener noreferrer">news</a>]</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="award-item animate-box" data-animate-effect="fadeInBottom">
+            <div class="title">中日新聞に掲載</div>
+            <small>January 4, 2021</small>
+            <p>研究成果が中日新聞朝刊の<br>「おはよう」欄で紹介されました．<br>[<a href="https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154516"
+                class="link" target="_blank" rel="noopener noreferrer">news</a>]</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="award-item animate-box" data-animate-effect="fadeInBottom">
+            <div class="title">成績優秀者表彰</div>
+            <small>December 17, 2020</small>
+            <p>静岡大学成績優秀者賞を授与し，<br>授業料が全額免除になりました．<br>[<a href="https://www.shizuoka.ac.jp/news/detail.html?CN=6832"
+                class="link" target="_blank" rel="noopener noreferrer">news</a>]</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="award-item animate-box" data-animate-effect="fadeInBottom">
+            <div class="title">学科長表彰</div>
+            <small>June, 2020</small>
+            <p>2019年度の成績及び成果により，<br>学科長表彰を受けました．</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="award-item animate-box" data-animate-effect="fadeInBottom">
+            <div class="title">成績優秀者表彰</div>
+            <small>July 17, 2019</small>
+            <p>静岡大学成績優秀者賞を授与し，<br>授業料が全額免除になりました．<br>[<a href="https://www.shizuoka.ac.jp/news/detail.html?CN=5702"
+                class="link" target="_blank" rel="noopener noreferrer">news</a>]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-                <div class="row">
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-building fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading">2021/05「インターンシップで優勝」</h3>
-                                <p>株式会社Speeeの1dayインターンシップで優勝しました．</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-graduation-cap fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a
-                                        href="https://www.shizuoka.ac.jp/news/detail.html?CN=7104" class="link"
-                                        target="_blank" rel="noopener noreferrer">2021/03「首席卒業」</a></h3>
-                                <p>静岡大学を情報学部首席で卒業しました．</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-newspaper-o fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a
-                                        href="https://www.inf.shizuoka.ac.jp/news/detail.html?CN=154516" class="link"
-                                        target="_blank" rel="noopener noreferrer">2020/12「中日新聞にて掲載」</a></h3>
-                                <p>研究成果が中日新聞朝刊の「おはよう」欄で紹介されました．</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-line-chart fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a
-                                        href="https://www.shizuoka.ac.jp/news/detail.html?CN=6832" class="link"
-                                        target="_blank" rel="noopener noreferrer">2020/12
-                                        「成績優秀者表彰式」</a></h3>
-                                <p>静岡大学の成績優秀者賞を授与し，4年後期の授業料が全額免除になりました．</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-comments-o fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a href="https://coling2020.org/" class="link"
-                                        target="_blank" rel="noopener noreferrer">2020/12「COLING2020」</a></h3>
-                                <p>計算言語学に関する国際会議COLING2020(Main Conference)で発表を行いました．</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-trophy fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading">2020/06「学科長表彰」</h3>
-                                <p>2019年度の成績及び成果により，学科長表彰に選ばれました．</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-newspaper-o fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a
-                                        href="https://www.chunichi.co.jp/article/46747?rct=h_tokai_news" class="link"
-                                        target="_blank" rel="noopener noreferrer">2020/03「言語処理学会年次大会」</a></h3>
-                                <p>言語処理学会年次大会で発表を行い，その様子が中日新聞に掲載されました．</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 content-block">
-                        <div class="content-body fade-up content-flex">
-                            <div class="bounce-in">
-                                <i class="fa fa-line-chart fa-md"></i>
-                            </div>
-                            <div>
-                                <h3 class="content-heading"><a
-                                        href="https://www.shizuoka.ac.jp/news/detail.html?CN=5702" class="link"
-                                        target="_blank" rel="noopener noreferrer">2019/07「成績優秀者表彰式」</a></h3>
-                                <p>静岡大学の成績優秀者賞を授与し，3年前期の授業料が全額免除になりました．</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <div id="content-wrapper">
-        <section id="experience" class="white">
-            <div class="container">
-                <div class="col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">Work Experience</h2>
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 content-body fade-up">
-                        <li class="block-indent"><strong>LINE株式会社</strong>
-                            <div class="list-indent">
-                                August 16 - September 24, 2021<br>
-                                November 8, 2021 - March 31, 2022<br>
-                                AIカンパニー/AI開発室に配属され，大規模汎用言語モデルを用いた研究開発に取り組みました．<br>
-                                ( Machine Learning & Server-side Engineer / Python, Docker, Kubernetes )<br>
-                                <br>
-                            </div>
-                        </li>
-                        <li class="block-indent"><strong>株式会社リクルート</strong>
-                            <div class="list-indent">
-                                October 4 - November 5, 2021<br>
-                                検索連動広告の最適化に取り組みました．<br>
-                                ( Data Scientist & Machine Learning Engineer / Python, BigQuery )<br>
-                                <br>
-                            </div>
-                        </li>
-                        <li class="block-indent"><strong>株式会社アカツキ</strong>
-                            <div class="list-indent">
-                                July 5 - 27, 2021<br>
-                                モバイルゲームの開発に携わりました．<br>
-                                ( Server-side Engineer / Ruby on Rails, AWS )<br>
-                                <br>
-                            </div>
-                        </li>
-                        <li class="block-indent"><strong>株式会社Speee</strong>
-                            <div class="list-indent">
-                                May 29, 2021<br>
-                                1dayインターンシップにて，優勝しました．<br>
-                                <br>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="content-wrapper">
-        <section id="publication" class="white">
-            <div class="container">
-                <div class="col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">Publication</h2>
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 content-body fade-up">
-                        <h3 class="top-gap-zero">Journal</h3>
-                        <li class="block-indent"><u>Ayaka Ueyama</u>, Yoshinobu Kano.<br>
-                            <div class="list-indent">
-                                <strong>Diverse Dialogue Generation by Deep Learning Methods Using Loss Function
-                                    Incorporating Word Statistics.</strong><br>
-                                Transactions of the Japanese Society for Artificial Intelligence, Vol. 37, No. 2,
-                                2022.<br>
-                                [<a href="https://www.jstage.jst.go.jp/article/tjsai/37/2/37_37-2_G-L62/_article/-char/ja/"
-                                    class="link" target="_blank" rel="noopener noreferrer">paper</a>]
-                            </div>
-                        </li>
-                        <div class="small-gap"></div>
-                        <h3 class="top-gap-zero">International Conferences (refereed)</h3>
-                        <li class="block-indent"><u>Ayaka Ueyama</u>, Yoshinobu Kano.<br>
-                            <div class="list-indent">
-                                <strong>Diverse dialogue generation with context dependent dynamic loss
-                                    function.</strong><br>
-                                In Proceedings of the 28th International Conference on Computational
-                                Linguistics
-                                (COLING2020, Main), pp.4123–4127, Barcelona Spain (Online), 2020. (Acceptance rate:
-                                26.2%)<br>
-                                [<a href="https://www.aclweb.org/anthology/2020.coling-main.364" class="link"
-                                    target="_blank" rel="noopener noreferrer">paper</a>]
-                            </div>
-                        </li>
-                        <div class="small-gap"></div>
-                        <h3>Domestic Conference / Others</h3>
-                        <li class="block-indent"><u>上山 彩夏</u>, 狩野 芳伸.<br>
-                            <div class="list-indent">
-                                <strong>生成文の文脈に応じ動的に変化する損失関数による多様な対話応答生成.</strong><br>
-                                言語処理学会第26回年次大会 (NLP2020), 水戸 (Online), 2020.<br>
-                                [<a href="https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P5-11.pdf"
-                                    class="link" target="_blank" rel="noopener noreferrer">paper</a>]
-                            </div>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="content-wrapper">
-        <section id="skill" class="white">
-            <div class="container">
-                <div class="col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">Skill</h2>
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 content-body fade-up">
-                        <h4 class="top-gap-zero">Research Topics</h4>
-                        <li class="block-indent gap">自然言語処理，機械学習，対話システム</li>
-                        <h4>Contest</h4>
-                        <li class="block-indent">AtCoder: 緑</li>
-                        <li class="block-indent gap">Kaggle: Shopee Competition 銅メダル (Solo)</li>
-                        <h4>Qualifications</h4>
-                        <li class="block-indent gap">基本情報技術者，応用情報技術者</li>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="content-wrapper">
-        <section id="education" class="white">
-            <div class="container">
-                <div class="col-md-12 center gap section-heading">
-                    <h2 class="main-title fade-down">Education</h2>
-                    <hr>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 content-body fade-up">
-                        <li class="block-indent">静岡大学大学院
-                            <div class="list-indent">
-                                April 2021 - 現在<br>
-                                総合科学技術研究科 情報学専攻<br>
-                                狩野研究室 所属<br>
-                            </div>
-                        </li>
-                        <div class="small-gap"></div>
-                        <li class="block-indent">静岡大学情報学部
-                            <div class="list-indent">
-                                April 2017 - March 2021<br>
-                                情報科学科<br>
-                                狩野研究室 所属 <br>
-                            </div>
-                        </li>
-                        <div class="small-gap"></div>
-                        <li class="block-indent">愛知県立刈谷高等学校
-                            <div class="list-indent">
-                                April 2014 – March 2017
-                            </div>
-                        </li>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/init.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw=="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
