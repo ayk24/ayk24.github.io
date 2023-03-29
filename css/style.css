@@ -117,52 +117,18 @@ body {
 }
 
 .experience,
-.publication {
+.event {
   margin: 0 0 80px 30px;
   clear: both;
 }
 
-.award {
-  margin: 0 0 60px 30px;
-  clear: both;
-}
-
-.award .row {
-  width: 80%;
-}
-
-.award-item {
-  padding: 14px 28px;
-  margin: 0 0 28px 14px;
-  text-align: center;
-  border: 1px dashed #aaa;
-  border-radius: 10px;
-}
-
-.award-item .title {
-  margin: 8px 0 3px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-.award-item small {
-  font-size: 10px;
-  color: #888;
-}
-
-.award-item p {
-  margin: 4px 0 12px;
-  font-size: 12px;
-}
-
-.publication-item {
+.event-item {
   position: relative;
   width: 80%;
   margin: 15px 0 30px;
 }
 
-.publication-item .icon {
+.event-item .icon {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -171,7 +137,7 @@ body {
   border-radius: 1px;
 }
 
-.publication-item .content {
+.event-item .content {
   padding: 0 0 0 55px;
 }
 
@@ -278,8 +244,7 @@ body {
   line-height: 1.5;
 }
 
-.award-item p a,
-.publication-item .content a,
+.event-item .content a,
 .timeline-item .content p a {
   font-weight: 500;
   color: rgb(0 0 0 / 60%);
