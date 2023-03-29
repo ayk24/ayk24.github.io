@@ -128,7 +128,16 @@ body {
   margin: 15px 0 30px;
 }
 
-.event-item .icon {
+.event-item .icon.color-1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 8px 0 0 16px;
+  background: #444;
+  border-radius: 1px;
+}
+
+.event-item .icon.color-2 {
   position: absolute;
   width: 10px;
   height: 10px;
