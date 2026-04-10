@@ -24,7 +24,7 @@
 					});
 				}, 100);
 			}
-		}, { offset: '85%' });
+		}, { offset: '95%' });
 	};
 
 	var burgerMenu = function () {
